@@ -1,0 +1,724 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>EPA Express</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            font-size: 11pt;
+        }
+
+        .epaex {
+            font-family: "Segoe UI", sans-serif;
+            width: 1200px;
+            margin: auto;
+            padding-top: 1rem;
+        }
+
+        .epaex h2 {
+            font-size: 1.5em;
+        }
+
+        .epaex h3 {
+            color: #385623;
+            margin: 0;
+            padding: 0;
+            font-size: 1.17em;
+        }
+
+        .epaex-list {
+            list-style-type: none;
+        }
+
+        .epaex-list-item {}
+
+        .epaex-list-item img {
+            margin: 0 0 -.25rem 0;
+        }
+
+        .epaex-list-icon {
+            float: left;
+        }
+
+        .epaex-list-text {
+            position: relative;
+            width: 90%;
+            display: inline-block;
+            padding-left: 2rem;
+            top: -1rem;
+        }
+
+        .epaex-header-with-icon {}
+
+        .epaex-header-with-icon .epaex-header-icon {
+            margin-right: .5rem;
+        }
+
+        .epaex-header-with-icon h2 {
+            display: inline-block;
+        }
+
+        .epaex-header {
+            width: 900px;
+            margin: auto;
+        }
+
+        .epaex-nav {
+            margin: 1rem 0;
+        }
+
+        .epaex-nav ul {}
+
+        .epaex-nav li {
+            display: inline-block;
+            padding: 0 1.8rem;
+        }
+
+        .epaex-body {}
+
+        .epaex-alert {
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        .epaex-latest-additions {
+            width: 700px;
+            margin: auto;
+        }
+
+        .epaex-latest-additions h3 {
+            margin-bottom: .5rem;
+        }
+
+        .epaex-feature-image {
+            width: 90%;
+            float: right;
+        }
+
+        .epaex-row {
+            float: left;
+            clear: both;
+            width: 100%;
+        }
+
+        .epaex-grid-one {
+            float: left;
+            width: 16%;
+        }
+
+        .epaex-one-half,
+        .epaex-grid-three {
+            float: left;
+            width: 50%;
+        }
+
+        .epaex-grid-five {
+            float: left;
+            /*width: calc(5/6%);*/
+            width: 80%;
+        }
+
+        .epaex-content {
+            float: left;
+            clear: both;
+            margin: 1rem 0;
+        }
+
+        .epaex-section {
+            padding: 1rem 0;
+            border-top: 1px solid #ccc;
+        }
+
+        .epaex-section header {
+            margin-bottom: 1rem;
+        }
+
+        .epaex-content-block {
+            width: 95%;
+            margin-bottom: 1rem;
+            margin-left: 2.1rem;
+            padding-top: 1rem;
+            border-top: 1px dotted #ddd;
+        }
+
+        .epaex-content-block.epaex-content-block-first {
+            padding-top: 0;
+            border: 0;
+        }
+
+        .epaex-content-block {}
+
+        .epaex-content-block header {
+            margin-bottom: 1rem;
+        }
+
+        .epaex-content-block main {}
+
+        .epaex-content-block footer {
+            margin-top: 1rem;
+        }
+
+        .epaex-content-block p {
+            margin-bottom: 1rem;
+        }
+
+        .epaex-image {
+            display: block;
+            margin: auto;
+        }
+
+        .epaex-image-small {
+            width: 150px;
+        }
+
+        .epaex-back-to-top {
+            font-size: .7rem;
+        }
+
+        .epaex-label-group {
+            margin: 1rem 0;
+        }
+
+        .epaex-label {
+            display: block;
+            text-decoration: underline;
+        }
+
+        .epaex-term {
+            display: block;
+        }
+
+        .epaex-inline-label .epaex-label,
+        .epaex-inline-label .epaex-term {
+            display: inline-block;
+        }
+
+        .epaex-term ul,
+        .epaex-term ol {
+            margin-left: 1rem;
+            padding-left: 1rem;
+        }
+
+        .epaex-label-group .epaex-one-half {
+            margin-bottom: 1rem;
+        }
+
+        .epaex-table {
+            border: 1px solid black;
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+
+        .epaex-table td,
+        .epaex-table th {
+            border: 1px solid black;
+            padding: .5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="epaex">
+        <header class="epaex-header">
+            <img src="./assets/image002.png" alt="EPA Express HQ News Bulletin" />
+        </header>
+        <nav class="epaex-nav">
+            <ul>
+                <li class="epaex-list-item">
+                    <img src="./assets/image016.gif" alt="calendar" />
+                    <a href="#upcoming-events">Upcoming Events</a>
+                </li>
+                <li class="epaex-list-item">
+                    <img src="./assets/image021.gif" alt="speakerphone" />
+                    <a href="#announcements">Announcements</a>
+                </li>
+                <li class="epaex-list-item">
+                    <img src="./assets/image024.gif" alt="education" />
+                    <a href="#professional-development">Professional Development</a>
+                </li>
+
+                <li class="epaex-list-item">
+                  <img src="./assets/image026.gif" alt="heart" />
+                  <a href="#health-wellness">Health &amp; Wellness</a>
+                </li>
+
+                <li class="epaex-list-item">
+                    <img src="./assets/image032.gif" alt="lock" />
+                    <a href="#security">Security &amp; Preparedness</a>
+                </li>
+
+
+
+            </ul>
+        </nav>
+        <main class="epaex-body">
+            <div class="epaex-alert">
+                <p>Go to <a href="#">bulletin.htm</a> to bookmark this page and read it any time!</p>
+            </div>
+            <section class="epaex-latest-additions">
+                <h3>Latest Additions</h3>
+                <div class="epaex-row">
+                    <div class="epaex-grid-three">
+                        <ul class="epaex-list">
+
+                          <li class="epaex-list-item">
+                          <img src="./assets/image016.gif" alt="calendar" class="epaex-list-icon" />
+                          <div class="epaex-list-text epaex-icon-text">
+                          <a href="#shooter">UPDATE: WJC-North Active Shooter Response Drill</a>
+                          </div>
+                          </li>
+
+                          <li class="epaex-list-item">
+                          <img src="./assets/image021.gif" alt="speakerphone" class="epaex-list-icon" />
+                          <div class="epaex-list-text epaex-icon-text">
+                          <a href="#aaas">Call to Action for a Learning Reaction: Host a New AAAS Fellow</a>
+                          </div>
+                          </li>
+
+
+
+
+                          <li class="epaex-list-item">
+                          <img src="./assets/image016.gif" alt="calendar" class="epaex-list-icon" />
+                          <div class="epaex-list-text epaex-icon-text">
+                          <a href="#women">Women's History Month Event</a>
+                          </div>
+                          </li>
+
+                      </ul>
+                  </div>
+                      <div class="epaex-grid-three">
+                          <img src="./assets/shooter.png" alt="Run, hide, fight" width="50" class="epaex-feature-image" />
+                      </div> </div>
+
+                        </section>
+
+                        <section class="epaex-content">
+                            <section class="epaex-section" id="upcoming-events">
+                                <header class="epaex-header-with-icon">
+                                    <img src="./assets/image016.gif" alt="calendar" class="epaex-header-icon" />
+                                    <h2>Upcoming Events</h2>
+                                </header>
+
+                                <aside class="epaex-content-block epaex-content-block-first" id="shooter">
+                                  <header>
+                                      <h3>WJC-North Active Shooter Response Drill</h3>
+                                      <em>Posted March 15</em>
+                                  </header>
+
+                                <main class="epaex-row">
+                                <div class="epaex-grid-five">
+
+                                <p>
+                                <b>Where:</b> WJC-North, 5th floor only
+                                <br />
+                                <b>When:</b> Thursday, April 26 from 2-4 p.m.
+                                <br />
+                                <b>What:</b> A drill designed to allow EPA personnel to increase their proficiency in Active Shooter Response through the use of role players and simulated gunfire.
+                                <br />
+                                <b>How do I respond:</b> If you are a drill participant, use the RUN. HIDE. FIGHT. options to respond. Although drill sound effects may be audible on adjacent floors, if you are not participating in the drill, please continue business as usual and avoid travel to the William Jefferson Clinton North 5th floor. Active Shooter Response information can be found on the intranet at <a href="http://goo.gl/QsXrzs">http://goo.gl/QsXrzs</a>. Questions or comments should be directed to Bill Bellerose at <a href="mailto:Bellerose.William@epa.gov">Bellerose.William@epa.gov</a> or 202-566-2191.
+                                </p>
+                                <p>
+                                In preparation for the William Jefferson Clinton North (WJC-N) Active Shooter Response Drill, scheduled for April 26, 2018, three training sessions are available for drill participants to learn about the RUN.HIDE.FIGHT. response options:
+                                <dt class="epaex-term">
+                                <ul>
+
+
+                                                        <li>	April 17, 11 a.m., WJC-N 5530</li>
+                                                        <li>April 19, 1:30 p.m., WJC-N 6530
+                                                          </li>
+                                                        <li>	April 23, 2 p.m., WJC-N 4530</li>
+
+
+                                                        </ul>
+                                                      </dt>
+                                </p>
+                                </div>
+                                <div class="epaex-grid-one">
+                                <img src="./assets/shooter.png" alt="Run, Hide, Fight" class="epaex-image epaex-image-small"/>
+                                </div> </main>
+
+                                    <footer>
+                                    <a href="#" class="epaex-back-to-top">Back to Top</a>
+                                  </footer>
+                                  </aside>
+
+                                <aside class="epaex-content-block" id="women">
+                                  <header>
+                                      <h3>Women's History Month Event</h3>
+                                      <em>Posted March 14</em>
+                                  </header>
+
+                                <main class="epaex-row">
+                                <div class="epaex-grid-five">
+                                <p>
+                                Please join the Office of Administration and Resources Management, Office of Human Resources, Diversity and Recruitment and Employee Services Division as we celebrate the 2018 Women's History Month Program.
+                                </p>
+                                <p>
+                                <b>Theme:</b> "Honoring Women Who Paved the Way"
+                                <br />
+                                <b>Date:</b> Wednesday, March 28
+                                <br />
+                                <b>Time:</b> 10-11 a.m.
+                                <br />
+                                <b>Place:</b> WJC-East Room 1153
+                                </p>
+                                <p>
+                                Broadcast information:
+                                <dt class="epaex-term">
+                                <ul>
+
+
+                                <li>The event will be broadcast live on EPAtv. <i>Please remember that EPAtv is available at <a href="http://epatv.epa.gov/">http://epatv.epa.gov/</a>using only Internet Explorer while on the EPA network and cannot be accessed remotely</i> .</li>
+                                <li>
+                                  Phone lines are not available for this event, but the video recording is expected to be available on <a href="http://intranet.epa.gov/media/video/iptv-on-demand.html">EPAtv On-Demand</a> on the morning of Thursday, March 29.
+                                </li>
+
+                                </ul>
+                                </dt>
+                                </p>
+
+
+                                </div>
+                                <div class="epaex-grid-one">
+                                <img src="./assets/Womens-History-2018.jpg" alt="Women's history month logo" class="epaex-image epaex-image-small"/>
+                                </div> </main>
+
+                                    <footer>
+                                    <a href="#" class="epaex-back-to-top">Back to Top</a>
+                                  </footer>
+                                  </aside>
+
+                                </section>
+
+
+
+
+                    <section class="epaex-section" id="announcements">
+                    <header class="epaex-header-with-icon">
+                      <img src="./assets/image021.gif" alt="speakerphone" class="epaex-header-icon" />
+                      <h2>Announcements</h2>
+                    </header>
+
+                    <aside class="epaex-content-block epaex-content-block-first" id="aaas">
+                    <header>
+                        <h3>Call to Action for a Learning Reaction: Host a New AAAS Fellow</h3>
+                        <em>Posted March 19</em>
+                    </header>
+
+                    <main class="epaex-row">
+                      <div class="epaex-grid-five">
+                        <p>
+                      Is your office interested in hosting a highly qualified scientist or engineer to learn about the role of science and policy in government? With a few simple steps, you can be part of the upcoming interviews with American Association for the Advancement of Science (AAAS) Science and Technology Policy Fellowship (STPF) fellows. Through EPA’s AAAS and STPF program, your office can support and mentor new AAAS STPF fellows through learning opportunities while benefitting from the unique knowledge and expertise that each person brings to EPA. All you need to do is submit a <a href="http://bit.ly/2GHwycV">completed placement description form</a> to <a href="mailto:Michaud.jayne@epa.gov">Jayne Michaud</a> by March 23. After, you will receive more information and instructions on participation in the interviews held in April.
+                        </p>
+
+                    </div>
+                    <div class="epaex-grid-one">
+                      <img src="./assets/aaas1.png" alt="metal gears with the words skill training, knowledge, competence, ability, learning and education on them" class="epaex-image epaex-image-small"/>
+                    </div> </main>
+
+                      <footer>
+                      <a href="#" class="epaex-back-to-top">Back to Top</a>
+                    </footer>
+                    </aside>
+
+                    <aside class="epaex-content-block" id="bank">
+                    <header>
+                        <h3>EPA Leave Bank Election Form (3160-6) Is Now Electronic</h3>
+                        <em>Posted March 1</em>
+                    </header>
+
+                    <main class="epaex-row">
+                      <div class="epaex-grid-five">
+                        <p>
+                      The <a href="http://bit.ly/2oFC6fw">Leave Bank Election Form</a>, EPA Form 3160-6, is now electronic! Employees must use EPA Form 3160-6 to join the Leave Bank during the annual Open Season or within 30 days of becoming a new employee of the EPA. Additionally, employees who are Leave Bank members and non-members can also use this form to donate leave to a specific employee or to donate hours to the leave bank.
+                        </p>
+                        <p>
+                        Employees can visit <a href="http://bit.ly/2FIjljP">http://intranet.epa.gov/ohr/benefits/leavebank/</a> for more information on the National Leave Bank Program or contact your <a href="http://bit.ly/2tdBDqH">Local Leave Bank Program Manager</a>.
+                        </p>
+
+                    </div>
+                    <div class="epaex-grid-one">
+                      <img src="./assets/bank.png" alt="papers going into a laptop" class="epaex-image epaex-image-small"/>
+                    </div> </main>
+
+                      <footer>
+                      <a href="#" class="epaex-back-to-top">Back to Top</a>
+                    </footer>
+                    </aside>
+
+                  </section>
+
+                  <section class="epaex-section" id="professional-development">
+                      <header class="epaex-header-with-icon">
+                          <img src="./assets/image024.gif" alt="education" class="epaex-header-icon" />
+                          <h2>Professional Development</h2>
+                      </header>
+
+                      <aside class="epaex-content-block epaex-content-block-first" id="lean">
+                            <header>
+                                <h3>Give Them Something to Talk About</h3>
+                                <em>Posted Oct. 26</em>
+                            </header>
+                            <main class="epaex-row">
+                              <div class="epaex-grid-five">
+                                <p>
+                                <b>Lean Overview Webinar:</b> Everyone's talking about Lean and how it can help identify and eliminate waste in our processes.  Join in the conversation by attending one of the Office of Policy's monthly webinars for individuals who are new to Lean.
+                                </p>
+                                <p>
+                                  <b>Learning Objectives:</b> Participants will learn about Lean terminology, tools, benefits and where to go for additional resources.
+                                </p>
+                                <p>
+                                This introductory session meets the first Thursday of every month from 2-3:30 p.m., EDT or EST, via Adobe Connect.
+                                </p>
+                                <p>
+                                  <b>To Register for this Facilitated Course:</b> Click on the date of the webinar you are interested in attending, then select the Register Now button to input your Name and Office.  Please RSVP by close of business the day before the course is presented.  If you experience any problems with the registration process or have questions, please send an email to the <a href="mailto:lean@epa.gov">lean@epa.gov</a> mailbox.
+                                </p>
+                                <p>
+                                  <a href="http://epawebconferencing.acms.com/e9spa48qzy5/event/event_info.html">April 5</a>
+                                </p>
+                              </div>
+                            <div class="epaex-grid-one">
+                              <img src="./assets/image017.png" alt="Lean into change" class="epaex-image epaex-image-small" />
+                            </div>
+                            </main>
+                            <footer>
+                                <a href="#" class="epaex-back-to-top">Back to Top</a>
+                            </footer>
+                        </aside>
+
+                        <aside class="epaex-content-block epaex-content-block-first" id="training">
+                              <header>
+                                  <h3>2018 EPA Mandatory Training</h3>
+
+                              </header>
+                              <main class="epaex-row">
+                                <div class="epaex-grid-five">
+                                  <p>
+                                  Federal employees, students in the Pathways program, contractors, grantees and volunteers are required to complete a series of mandatory training courses each year. Federal employees have five mandatory courses, while contractors, volunteers, SEEs and grantees have two mandatory courses. The 2018 mandatory training courses are located on <a href="http://bit.ly/2tQf6Am">EPA's eLearning site</a>. Look in your Learning Plan. Preferred browser is Internet Explorer 11.
+                                  </p>
+                                  <p>
+                                    <a href="http://bit.ly/2AghQJK">Existing Federal or Pathways Employees</a>
+                                    <br />
+                                    <a href="http://bit.ly/2zR3nDz">Supervisors, Managers, and Executives</a>
+                                    <br />
+                                    <a href="http://bit.ly/2mK0K12">New Federal Employees</a>
+                                    <br />
+                                    <a href="http://bit.ly/2AjJHIQ">Contractors, Volunteers, SEEs and Grantees</a>
+                                  </p>
+                                </div>
+                              <div class="epaex-grid-one">
+                                <img src="./assets/Training-word-cloud.png" alt="Training word cloud" class="epaex-image epaex-image-small" />
+                              </div>
+                              </main>
+                              <footer>
+                                  <a href="#" class="epaex-back-to-top">Back to Top</a>
+                              </footer>
+                          </aside>
+
+                        <aside class="epaex-content-block" id="talent">
+                              <header>
+                                  <h3>The 2018 Employee Talent Development Program &amp; Headquarters Retirement and Transition Seminars Calendar of Events is Now Available to Our Employees</h3>
+
+                              </header>
+                              <main>
+                                  <p>Some of the courses include:</p>
+                                  <table class="epaex-table">
+                                      <thead>
+                                          <tr>
+                                              <th>Date</th>
+                                              <th>Course Title</th>
+                                              <th>Financial Investment</th>
+                                              <th>Register By</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <td>Various Dates</td>
+                                              <td>Retirement/Transition Seminars (CSRS/FERS)</td>
+                                              <td>$205</td>
+                                              <td>Various Dates</td>
+                                          </tr>
+                                          <tr>
+                                              <td>May 9</td>
+                                              <td>Emotional Intelligence - The Foundation For Personal And Professional Success <i>New!</i>  </td>
+                                              <td>$0</td>
+                                              <td>April 18</td>
+                                          </tr>
+                                          <tr>
+                                              <td>June 19-20</td>
+                                              <td>7 Habits of Highly Effective People</td>
+                                              <td>$194.05</td>
+                                              <td>May 18</td>
+                                          </tr>
+                                          <tr>
+                                              <td>August 7-9</td>
+                                              <td>Advanced Facilitation Skills</td>
+                                              <td>$541.67</td>
+                                              <td>July 9</td>
+                                          </tr>
+                                          <tr>
+                                              <td>August 21-22</td>
+                                              <td>Writing Advantage</td>
+                                              <td>$122.33</td>
+                                              <td>July 23</td>
+                                          </tr>
+                                          <tr>
+                                              <td>October 9-10</td>
+                                              <td>Project Management</td>
+                                              <td>$705.92</td>
+                                              <td>Sept. 10</td>
+                                          </tr>
+                                          <tr>
+                                              <td>Dec. 5</td>
+                                              <td>Financial Planning - FERS (New Employees) <i>New!</i></td>
+                                              <td>$87</td>
+                                              <td>Nov. 5</td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                                  <p>&nbsp;</p>
+                                  <p>Visit the 2018 calendar at the <a href="http://bit.ly/2paKp4a">EPA homepage</a> under the &ldquo;EPA University&rdquo; tab. Clicking &ldquo;EPA University&rdquo; will take you to the SharePoint site.</p>
+                                  <p>
+                                  <b>Questions?</b> Contact: <a href="mailto:kennedy.diana@epa.gov">Diana Kennedy</a> at kennedy.diana@epa.gov
+                                  </p>
+                              </main>
+                              <footer>
+                                  <a href="#" class="epaex-back-to-top">Back to Top</a>
+                              </footer>
+                          </aside>
+
+
+                      </section>
+
+                  <section class="epaex-section" id="health-wellness">
+                      <header class="epaex-header-with-icon">
+                          <img src="./assets/image026.gif" alt="heart" class="epaex-header-icon" />
+                          <h2>Health &amp; Wellness</h2>
+                      </header>
+
+                      <aside class="epaex-content-block epaex-content-block-first" id="nutrition">
+                            <header>
+                                <h3>Eat Healthy, Be Healthy </h3>
+                                <em>Posted March 5</em>
+                            </header>
+                            <main class="epaex-row">
+                                <div class="epaex-grid-five">
+                        <p>
+                          Healthy food choices and proper nutrition can help prevent <a href="http://bit.ly/2FcrRuu">obesity</a>, <a href="http://bit.ly/2FfEQeZ">type 2 diabetes</a>, <a href="http://bit.ly/2oVfHez">heart disease</a>, <a href="http://bit.ly/2Fd9qpx">cancer</a>, and <a href="http://bit.ly/2oINA2O">osteoporosis</a>. To get in the habit of maintaining healthy food choices:
+                         </p>
+                         <p>
+                           <dt class="epaex-term">
+                           <ul>
+
+
+                                                   <li>	Select healthy vending machine options, marked by a "yellow tag for a healthier bag."</li>
+                                                   <li>
+                                                     Bring healthy, low-fat foods to meetings.</li>
+                                                   <li>	Explore the healthy food choices at your local snack bar.</li>
+                                                   <li>
+                                                     	Visit the Capital Harvest (i.e., the local farmers’ market) at the Ronald Reagan Building and International Trade Center on Fridays from 11 a.m. to 3 p.m., May through November.
+                                                   </li>
+                                                   <li>
+                                                     Join the Walk to Wellness and Step It Up Challenge to commit to healthy eating, regular physical activity and lifelong good habits.
+                                                   </li>
+
+                                                   </ul>
+                                                 </dt>
+                         </p>
+                         <p>
+                      For more information, visit the <a href="http://bit.ly/2oNB80S">EPA intranet</a>.
+                      </p>
+                      </div>
+
+                      <div class="epaex-grid-one">
+                        <img src="./assets/oranges.png" alt="oranges.png" class="epaex-image epaex-image-small" />
+                      </div>
+                      </main>
+
+                      <footer>
+                      <a href="#" class="epaex-back-to-top">Back to Top</a>
+                      </footer>
+                      </aside>
+
+                      <aside class="epaex-content-block epaex-content-block-first" id="challenge">
+                            <header>
+                                <h3>Join the Headquarters Step It Up Challenge Team</h3>
+
+                            </header>
+                            <main class="epaex-row">
+                                <div class="epaex-grid-five">
+                        <p>
+                          The EPA Step It Up Challenge is back - <a href="http://bit.ly/2BMcfaf"> join the EPA Headquarters team</a>to step up your fitness and earn points for our team by tracking daily steps and minutes of exercise. From Feb. 1 to March 31, 2018, headquarters will compete against other large EPA locations (500 or more employees). This year’s challenge also has a few new features:
+                         </p>
+                         <p>
+                           <dt class="epaex-term">
+                           <ul>
+
+
+                                                   <li>	The challenge will have a monthly format, with scores re-setting at the end of each month. This will allow for winners and rankings for both February and March.</li>
+                                                   <li>	Each month, participants can complete a wellness challenge to earn bonus points.
+                                                     </li>
+                                                   <li>If you signed up for the challenge in 2017, you do not need to register again in 2018 to participate - just start <a href="http://bit.ly/2nw3soH">logging your steps and exercise</a> beginning on Feb. 1.</li>
+
+                                                   <ul>
+                                                     The online reporting form will have an option to retrieve your password if you have forgotten it.
+                                                   </ul>
+
+
+                                                   </ul>
+                                                 </dt>
+                         </p>
+                         <p>
+                      To learn more and sign up for the challenge, visit the <a href="http://bit.ly/2GDpTjV">EPA intranet</a> or review the <a href="http://bit.ly/2s2Fs1e">Participants Fact Sheet</a>.
+                      </p>
+                      </div>
+
+                      <div class="epaex-grid-one">
+                        <img src="./assets/steps.jpg" alt="Step it up challenge logo" class="epaex-image epaex-image-small" />
+                      </div>
+                      </main>
+
+                      <footer>
+                      <a href="#" class="epaex-back-to-top">Back to Top</a>
+                      </footer>
+                      </aside>
+
+                    </section>
+
+                    <section class="epaex-section" id="security">
+                    <header class="epaex-header-with-icon">
+                      <img src="./assets/image032.gif" alt="lock" class="epaex-header-icon" />
+                      <h2>Security & Preparedness</h2>
+                    </header>
+
+
+                    <aside class="epaex-content-block epaex-content-block-first" id="la">
+                    <header>
+                        <h3>There are currently no posts for this section.</h3>
+
+                    </header>
+
+                    <main class="epaex-row">
+                      <div class="epaex-grid-five">
+
+                    </div> </main>
+
+                      <footer>
+                      <a href="#" class="epaex-back-to-top">Back to Top</a>
+                    </footer>
+                    </aside>
+                  </section>
+                  <div class="epaex-alert">
+                      <p>To provide comments on or entries to EPA Express, please email <a href="mailto:internalcomms@epa.gov">internalcomms@epa.gov</a></p>
+                  </div>
+</section>
+
+                </main>
+                </div>
+
+                  </body>
+                  </html>

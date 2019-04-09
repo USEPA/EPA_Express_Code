@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>EPA Express</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            font-size: 11pt;
+        }
+
+        .epaex {
+            font-family: "Segoe UI", sans-serif;
+            width: 1200px;
+            margin: auto;
+            padding-top: 1rem;
+        }
+
+        .epaex h2 {
+            font-size: 1.5em;
+        }
+
+        .epaex h3 {
+            color: #385623;
+            margin: 0;
+            padding: 0;
+            font-size: 1.17em;
+        }
+
+        .epaex-list {
+            list-style-type: none;
+        }
+
+        .epaex-list-item {}
+
+        .epaex-list-item img {
+            margin: 0 0 -.25rem 0;
+        }
+
+        .epaex-list-icon {
+            float: left;
+        }
+
+        .epaex-list-text {
+            position: relative;
+            width: 90%;
+            display: inline-block;
+            padding-left: 2rem;
+            top: -1rem;
+        }
+
+        .epaex-header-with-icon {}
+
+        .epaex-header-with-icon .epaex-header-icon {
+            margin-right: .5rem;
+        }
+
+        .epaex-header-with-icon h2 {
+            display: inline-block;
+        }
+
+        .epaex-header {
+            width: 900px;
+            margin: auto;
+        }
+
+        .epaex-nav {
+            margin: 1rem 0;
+        }
+
+        .epaex-nav ul {}
+
+        .epaex-nav li {
+            display: inline-block;
+            padding: 0 1.8rem;
+        }
+
+        .epaex-body {}
+
+        .epaex-alert {
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        .epaex-latest-additions {
+            width: 700px;
+            margin: auto;
+        }
+
+        .epaex-latest-additions h3 {
+            margin-bottom: .5rem;
+        }
+
+        .epaex-feature-image {
+            width: 40%;
+            float: right;
+        }
+
+        .epaex-row {
+            float: left;
+            clear: both;
+            width: 100%;
+        }
+
+        .epaex-grid-one {
+            float: left;
+            width: 16%;
+        }
+
+        .epaex-one-half,
+        .epaex-grid-three {
+            float: left;
+            width: 50%;
+        }
+
+        .epaex-grid-five {
+            float: left;
+            /*width: calc(5/6%);*/
+            width: 80%;
+        }
+
+        .epaex-content {
+            float: left;
+            clear: both;
+            margin: 1rem 0;
+        }
+
+        .epaex-section {
+            padding: 1rem 0;
+            border-top: 1px solid #ccc;
+        }
+
+        .epaex-section header {
+            margin-bottom: 1rem;
+        }
+
+        .epaex-content-block {
+            width: 95%;
+            margin-bottom: 1rem;
+            margin-left: 2.1rem;
+            padding-top: 1rem;
+            border-top: 1px dotted #ddd;
+        }
+
+        .epaex-content-block.epaex-content-block-first {
+            padding-top: 0;
+            border: 0;
+        }
+
+        .epaex-content-block {}
+
+        .epaex-content-block header {
+            margin-bottom: 1rem;
+        }
+
+        .epaex-content-block main {}
+
+        .epaex-content-block footer {
+            margin-top: 1rem;
+        }
+
+        .epaex-content-block p {
+            margin-bottom: 1rem;
+        }
+
+        .epaex-image {
+            display: block;
+            margin: auto;
+        }
+
+        .epaex-image-small {
+            width: 150px;
+        }
+
+        .epaex-back-to-top {
+            font-size: .7rem;
+        }
+
+        .epaex-label-group {
+            margin: 1rem 0;
+        }
+
+        .epaex-label {
+            display: block;
+            text-decoration: underline;
+        }
+
+        .epaex-term {
+            display: block;
+        }
+
+        .epaex-inline-label .epaex-label,
+        .epaex-inline-label .epaex-term {
+            display: inline-block;
+        }
+
+        .epaex-term ul,
+        .epaex-term ol {
+            margin-left: 1rem;
+            padding-left: 1rem;
+        }
+
+        .epaex-label-group .epaex-one-half {
+            margin-bottom: 1rem;
+        }
+
+        .epaex-table {
+            border: 1px solid black;
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+
+        .epaex-table td,
+        .epaex-table th {
+            border: 1px solid black;
+            padding: .5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="epaex">
+        <header class="epaex-header">
+            <img src="./assets/image002.png" alt="EPA Express HQ News Bulletin" />
+        </header>
+        <nav class="epaex-nav">
+            <ul>
+                <li class="epaex-list-item">
+                    <img src="./assets/image016.gif" alt="calendar" />
+                    <a href="#upcoming-events">Upcoming Events</a>
+                </li>
+                <li class="epaex-list-item">
+                    <img src="./assets/image021.gif" alt="speakerphone" />
+                    <a href="#announcements">Announcements</a>
+                </li>
+                <li class="epaex-list-item">
+                    <img src="./assets/image024.gif" alt="education" />
+                    <a href="#professional-development">Professional Development</a>
+                </li>
+
+                <li class="epaex-list-item">
+                  <img src="./assets/image026.gif" alt="heart" />
+                  <a href="#health-wellness">Health &amp; Wellness</a>
+                </li>
+
+                <li class="epaex-list-item">
+                    <img src="./assets/image032.gif" alt="lock" />
+                    <a href="#security">Security &amp; Preparedness</a>
+                </li>
+
+
+
+            </ul>
+        </nav>
+        <main class="epaex-body">
+            <div class="epaex-alert">
+                <p>Go to <a href="#">bulletin.htm</a> to bookmark this page and read it any time!</p>
+            </div>
+            <section class="epaex-latest-additions">
+                <h3>Latest Additions</h3>
+
+                <div class="epaex-row">
+                    <div class="epaex-grid-three">
+                        <ul class="epaex-list">
+
+
+                          <li class="epaex-list-item">
+                          <img src="./assets/image026.gif" alt="heart" class="epaex-list-icon" />
+                            <div class="epaex-list-text">
+                            <a href="#healthy">Choose Healthy Recipes</a>
+                            </div>
+                            </li>
+
+                            <li class="epaex-list-item">
+                            <img src="./assets/image016.gif" alt="calendar" class="epaex-list-icon" />
+                              <div class="epaex-list-text">
+                              <a href="#foods">Eating Mediterranean Lunch n' Learn</a>
+                              </div>
+                              </li>
+
+                        <li class="epaex-list-item">
+                        <img src="./assets/image026.gif" alt="heart" class="epaex-list-icon" />
+                        <div class="epaex-list-text">
+                        <a href="#sleep">Sleep Well</a>
+                        </div>
+                        </li>
+
+                        <li class="epaex-list-item">
+                        <img src="./assets/image026.gif" alt="heart" class="epaex-list-icon" />
+                        <div class="epaex-list-text">
+                        <a href="#diabetes">Defend Against Diabetes</a>
+                        </div>
+                        </li>
+
+
+                    </ul>
+                  </div>
+                      <div class="epaex-grid-three">
+                          <img src="./assets/tomatoes.png" alt="tomatoes" width="50" class="epaex-feature-image" />
+                      </div> </div>
+
+                        </section>
+
+                        <section class="epaex-content">
+                            <section class="epaex-section" id="upcoming-events">
+                                <header class="epaex-header-with-icon">
+                                    <img src="./assets/image016.gif" alt="calendar" class="epaex-header-icon" />
+                                    <h2>Upcoming Events</h2>
+                                </header>
+
+                                <aside class="epaex-content-block epaex-content-block-first" id="foods">
+                                <header>
+                                    <h3>Eating Mediterranean Lunch n' Learn</h3>
+                                  <em>Posted April 4</em>
+                                          </header>
+                                          <main class="epaex-row">
+                                            <div class="epaex-grid-five">
+
+                                    <p>
+                                    <b>Date:</b> Wednesday, April 10
+                                    <br />
+                                    <b>Time:</b> 12 to 1 p.m.
+                                    <br />
+                                    <b>Location:</b> WJC East, Room B316
+                                    <br />
+                                    <b>Webinar:</b> <a href="http://bit.ly/2YQNqXp">https://epawebconferencing.acms.com/eatingmediterranean/</a>
+                                    </p>
+                                    <p>
+                                    Participants will learn about the benefits of a Mediterranean lifestyle including the traditional "Mediterranean Diet." This diet is characterized by high intake of healthy fats such as olive oil, fruits, nuts, vegetables, and lean meats; a moderate intake of fish and poultry; a low intake of dairy products, red meat, processed meats, and sugary sweets; and wine in moderation.
+                                    <dt class="epaex-term">
+                                    <ul>
+
+
+
+                                    <li>
+                                      	Learn how to modify your diet to make it more "Mediterranean."
+                                    </li>
+                              <li>
+                                  	Examine a Mediterranean meal plan and explore Mediterranean-style recipes.
+                              </li>
+
+                                    </ul>
+                                    </dt>
+                                    </p>
+
+                                    <p>
+                                    <b>This webinar is free, and no registration is necessary. Join us in person or virtually!</b>
+
+                                </p>
+                                <p>
+
+                                  For additional information, please contact <a href="mailto:hines.christina@epa.gov">Christina Hines</a> at 202-566-1989 or <a href="mailto:conway.ramona@epa.gov">Ramona J. Conway</a> at 202-564-7571.
+                                </p>
+
+                                    </div>
+                                    <div class="epaex-grid-one">
+                                      <img src="./assets/foods.png" alt="foods" class="epaex-image epaex-image-small"/>
+                                    </div>
+                                            </main>
+
+                                  <footer>
+                                  <a href="#" class="epaex-back-to-top">Back to Top</a>
+                                </footer>
+                                </aside>
+
+                                <aside class="epaex-content-block" id="vein">
+                                <header>
+                                    <h3>Vein Screening</h3>
+                                  <em>Posted April 2</em>
+                                          </header>
+                                          <main class="epaex-row">
+                                            <div class="epaex-grid-five">
+
+                                    <p>
+                                    <b>Date:</b> Wednesday, April 10
+                                    <br />
+                                    <b>Time:</b> 9 a.m. to 1 p.m. (by appointment only)
+                                    <br />
+                                    <b>Location:</b> Ronald Reagan Building Health Unit, Room G1-20
+                                    </p>
+                                    <p>
+                                    Dr. Maria Litzendorf of MedStar Heart and Vascular Institute will conduct complimentary vein screenings and help you learn ways to keep your legs looking and feeling healthy. Please call the <a href="http://bit.ly/2uGHPoN">Ronald Reagan Building Health Unit</a> at 202-565-1940 to make your appointment.
+                                    </p>
+                                    <p>
+                                      <i>Screenings are available to EPA federal employees only. This event is presented to support health and wellness. EPA does not endorse this business, practitioner or service. </i>
+                                </p>
+
+                                    </div>
+                                    <div class="epaex-grid-one">
+                                      <img src="./assets/doctors.png" alt="doctors" class="epaex-image epaex-image-small"/>
+                                    </div>
+                                            </main>
+
+                                  <footer>
+                                  <a href="#" class="epaex-back-to-top">Back to Top</a>
+                                </footer>
+                                </aside>
+
+                                <aside class="epaex-content-block" id="disability">
+                                <header>
+                                    <h3>Workshop: Increasing Employment of People with Disabilities at EPA</h3>
+                                  <em>Posted April 1</em>
+                                          </header>
+                                          <main class="epaex-row">
+                                            <div class="epaex-grid-five">
+
+                                    <p>
+                                    Please join the Office of Mission Support as we welcome Mr. Michael Murray, Director, Employer Policy Team, Office of Disability Employment Policy, U.S. Department of Labor, as our workshop presenter to discuss ways to increase the employment of people with disabilities at EPA. There are two ways to participate in this workshop on <b>Wednesday, April 10, 2 to 3 p.m. EDT:</b>
+                                    <dt class="epaex-term">
+                                    <ul>
+
+
+
+                                    <li>
+                                        <b>In person:</b> Please join the discussion at WJC-East building, room B316.
+                                    </li>
+                              <li>
+                                  <b>Remotely:</b> Please join us through an <a href="http://bit.ly/2YDrGhI">Adobe Connect session</a>. Phone lines are not available.
+                              </li>
+
+                                    </ul>
+                                    </dt>
+                                    </p>
+                                    <p>
+                                    Sign Language Interpreters will be present, and captioning will be available via Adobe Connect.
+                                    </p>
+                                    <p>
+                                      People needing reasonable accommodations should contact Kristin P. Tropp at 202-559-0006 or <a href="mailto:tropp.kristin@epa.gov">tropp.kristin@epa.gov</a>.
+                                    </p>
+                                <p>
+                                If you have any questions about this event, please contact Anthony Napoli, Diversity and Inclusion Program Manager at <a href="mailto:napoli.anthony@epa.gov">napoli.anthony@epa.gov</a>.
+                                </p>
+
+                                    </div>
+                                    <div class="epaex-grid-one">
+                                      <img src="./assets/disability.jpg" alt="Michael Murray" class="epaex-image epaex-image-small"/>
+                                    </div>
+                                            </main>
+
+                                  <footer>
+                                  <a href="#" class="epaex-back-to-top">Back to Top</a>
+                                </footer>
+                                </aside>
+
+                                <aside class="epaex-content-block" id="fitness">
+                                <header>
+                                    <h3>Join the Ronald Reagan Building Fitness Center</h3>
+                                  <em>Posted March 25</em>
+                                          </header>
+                                          <main class="epaex-row">
+                                            <div class="epaex-grid-five">
+                                              <p>
+                                                Do you want to jump start or maintain your fitness routine? Join the <a href="http://bit.ly/2TxDkXw">Ronald Reagan Building fitness center</a>! Fitness center staff will be stationed in the William Jefferson Clinton Building lobbies on the following dates to answer questions about the fitness center membership process:
+                                      <dt class="epaex-term">
+                                      <ul>
+
+
+
+
+                                <li>
+                                  	WJC West: Tuesday, April 9 from 8 to 9 a.m.
+                                </li>
+                                <li>
+                                  	WJC South: Thursday, April 18 from 11 a.m. to 1 p.m.
+                                </li>
+                                      </ul>
+                                      </dt>
+                                    </p>
+                                    <p>
+                                      If you have questions, contact the headquarters' wellness coordinator, <a href="mailto:wilson.severa@epa.gov">SeVera Wilson</a>.
+                                    </p>
+                                    </div>
+                                    <div class="epaex-grid-one">
+                                      <img src="./assets/treadmill.png" alt="treadmill" class="epaex-image epaex-image-small"/>
+                                    </div>
+                                            </main>
+
+                                  <footer>
+                                  <a href="#" class="epaex-back-to-top">Back to Top</a>
+                                </footer>
+                                </aside>
+
+                                <aside class="epaex-content-block" id="gog">
+                                <header>
+                                    <h3>Gears of Government Award Ceremony</h3>
+                                  <em>Posted March 22</em>
+                                          </header>
+                                          <main class="epaex-row">
+                                            <div class="epaex-grid-five">
+
+                                    <p>
+                                    The EPA's inaugural Gears of Government Award ceremony will be held on Friday, March 29, 2019, from 10:00 a.m. to 11:30 a.m. in the Green Room at EPA Headquarters and via EPAtv. Refreshments will be served after the ceremony.
+                                    </p>
+                                    <p>
+                                    The event will be broadcast live through EPAtv. Please remember that EPAtv is available at <a href="http://epatv.epa.gov/">http://epatv.epa.gov/</a> using only Internet Explorer while on the EPA network and cannot be accessed remotely. Phone lines are not available for this event, but the video recording is expected to be available on <a href="http://intranet.epa.gov/media/video/iptv-on-demand.html">EPAtv On-Demand</a> on Monday, April 1.
+                                    </p>
+                                    <p>
+                                    Sign language Interpreters will be present for the event.
+                                    </p>
+                                    <p>
+                                    People needing reasonable accommodations should contact <a href="mailto:tropp.kristin@epa.gov">Kristin Tropp</a> at 202-559-0006.
+                                    </p>
+                                    <p>
+                                    For additional information regarding this event, please contact <a href="mailto:prout.derico@epa.gov">Derico Prout</a> at 202-564-6341.
+                                    </p>
+                                    </div>
+                                    <div class="epaex-grid-one">
+                                      <img src="./assets/gog.png" alt="Gears of Government Awards logo" class="epaex-image epaex-image-small"/>
+                                    </div>
+                                            </main>
+
+                                  <footer>
+                                  <a href="#" class="epaex-back-to-top">Back to Top</a>
+                                </footer>
+                                </aside>
+
+
+                                <aside class="epaex-content-block" id="tsp">
+                                <header>
+                                    <h3>Free 2019 TSP Webinars</h3>
+                                  <em>Posted March 19</em>
+                                          </header>
+                                          <main class="epaex-row">
+                                            <div class="epaex-grid-five">
+
+                                    <p>
+                                    The Federal Retirement Thrift Investment Board is sponsoring several free Thrift Savings Plan (TSP) webinars. These events require registration. All events are hosted by Randy Urban, TSP Training and Liaison Specialist.
+                                    </p>
+                                    <p>
+                                      <b>Registration Instructions:</b><br />
+                                      1. Select the hyperlink for the webinar topic you'd like to register for on <a href="http://bit.ly/2CsudBX">EPA's Thrift Savings Plan site</a>. You'll need to scroll down on the page to see the box with all the upcoming webinars.
+                                      <br />
+                                      2. Click "Register."
+                                      <br />
+                                      3. Enter the registration password: TSPweb.
+                                      <br />
+                                      4.	Enter your information and then click "Submit" on the registration form.
+                                      <br />
+                                      5.	You will receive a confirmation email message with instructions on how to join the event once the host approves your registration.
+                                    </p>
+                                    <p>
+                                      For assistance, please contact TSP webinars at <a href="mailto:webinars@tsp.gov">webinars@tsp.gov</a>.
+                                    </p>
+                                    </div>
+                                    <div class="epaex-grid-one">
+                                      <img src="./assets/tsp.png" alt="Thrift Savings Plan logo" class="epaex-image epaex-image-small"/>
+                                    </div>
+                                            </main>
+
+                                  <footer>
+                                  <a href="#" class="epaex-back-to-top">Back to Top</a>
+                                </footer>
+                                </aside>
+
+                            </section>
+
+                    <section class="epaex-section" id="announcements">
+                    <header class="epaex-header-with-icon">
+                      <img src="./assets/image021.gif" alt="speakerphone" class="epaex-header-icon" />
+                      <h2>Announcements</h2>
+                    </header>
+
+                    <aside class="epaex-content-block epaex-content-block-first" id="staa">
+                    <header>
+                        <h3>EPA Authors with Published Articles Have a Chance to Earn $10K Award</h3>
+                      <em>Posted March 13</em>
+                              </header>
+                              <main class="epaex-row">
+                                <div class="epaex-grid-five">
+                                  <p>
+                                    EPA employees have a chance to earn up to a $10,000 Level I award for their published work as part of the prestigious <a href="http://bit.ly/2W0Rv9t">2019 Scientific and Technological Achievement Awards</a> (STAA). A Level II award can land authors $5,000 and a Level III award can earn a $2,000 award. The program, managed by the Office of Research and Development (ORD), will be open for nominations April 1 through May 1.
+                        </p>
+                        <p>
+                          Each year, EPA recognizes outstanding papers written by agency staff and published in scientific and technical journals. These peer-reviewed publications represent the quality and depth of EPA science, and they provide foundational support to agency decision-making and advancement of science.
+                        </p>
+
+                        <p>
+                        Learn about the <a href="http://bit.ly/2W0Rv9t">nomination procedures and guidelines</a>.
+                        </p>
+                        </div>
+                        <div class="epaex-grid-one">
+                          <img src="./assets/nominations.png" alt="Call for Nominations" class="epaex-image epaex-image-small"/>
+                        </div>
+                                </main>
+
+                      <footer>
+                      <a href="#" class="epaex-back-to-top">Back to Top</a>
+                    </footer>
+                    </aside>
+
+
+                    </section>
+
+                  <section class="epaex-section" id="professional-development">
+                      <header class="epaex-header-with-icon">
+                          <img src="./assets/image024.gif" alt="education" class="epaex-header-icon" />
+                          <h2>Professional Development</h2>
+                      </header>
+
+
+                      <aside class="epaex-content-block epaex-content-block-first" id="elms">
+                            <header>
+                                <h3>ELMS Overview</h3>
+                                <em>Posted Jan. 30</em>
+                            </header>
+                            <main class="epaex-row">
+                              <div class="epaex-grid-five">
+
+                                <p>
+                                  Everyone's talking about ELMS and how it can help identify and solve problems in our processes.  Join in the conversation by attending one of the Office of Continuous Improvement's monthly webinars for individuals who want to learn more about the management system that is being deployed throughout the agency. We will also discuss Lean principles, concepts, tools and the connection between ELMS and Lean.
+                                </p>
+                                <p>
+                                  This introductory session meets the first Thursday of every month from 2-3:30 p.m. via Adobe Connect.
+                                </p>
+                      <p>
+                        For more information on ELMS, visit our <a href="http://intranet.epa.gov/lean/lms/index.html">ELMS webpage</a>.
+                      </p>
+                      <p>
+                        Please RSVP by close of business the day before the course is presented for the following dates:
+
+                        <dt class="epaex-term">
+                    <ul>
+
+
+
+                    <li><a href="https://epawebconferencing.acms.com/eqdj9hynfqg6/event/login.html">May 2</a></li>
+                    <li>
+                      <a href="https://epawebconferencing.acms.com/e5rl6eoh0ijo/event/login.html">June 6</a>
+                    </li>
+                    <li>
+                      <a href="https://epawebconferencing.acms.com/evj3nulujswo/event/login.html">July 11</a>
+                    </li>
+                    <li>
+                      <a href="https://epawebconferencing.acms.com/engankuxvnm9/event/login.html">August 1</a>
+                    </li>
+                    <li>
+                      <a href="https://epawebconferencing.acms.com/ehkhigorqyei/event/login.html">September 5</a>
+                    </li>
+                    <li>
+                      <a href="https://epawebconferencing.acms.com/eg4f8yvba8t2/event/login.html">October 3</a>
+                    </li>
+                    <li>
+                      <a href="https://epawebconferencing.acms.com/efgek81lgdu6/event/login.html">November 7</a>
+                    </li>
+                    <li>
+                      <a href="https://epawebconferencing.acms.com/elb32xr53lma/event/login.html">December 5</a>
+                    </li>
+
+                    </ul>
+                    </dt>
+                      </p>
+                    </div>
+                      <div class="epaex-grid-one">
+                        <img src="./assets/lms.png" alt="LMS logo" class="epaex-image epaex-image-small"/>
+                      </div>
+                              </main>
+
+                            <footer>
+                                <a href="#" class="epaex-back-to-top">Back to Top</a>
+                            </footer>
+                        </aside>
+
+                      </section>
+
+                  <section class="epaex-section" id="health-wellness">
+                      <header class="epaex-header-with-icon">
+                          <img src="./assets/image026.gif" alt="heart" class="epaex-header-icon" />
+                          <h2>Health &amp; Wellness</h2>
+                      </header>
+
+                      <aside class="epaex-content-block epaex-content-block-first" id="healthy">
+                                        <header>
+                                            <h3>Choose Healthy Recipes</h3>
+                                            <em>Posted April 8</em>
+                                        </header>
+
+                                        <main class="epaex-row">
+                                          <div class="epaex-grid-five">
+                                            <p>
+                                            Choosing healthy recipes will help you maintain a balanced diet. When selecting a healthy recipe, consider:
+                                            <dt class="epaex-term">
+                                            <ul>
+                                            <li>
+                                                Looking for heart-healthy, low-calorie recipes that are low in saturated fat, cholesterol and sodium.
+                                            </li>
+                                            <li>
+                                              Trying a variety of foods, such as lean meats and vegetables, and adding flavor with herbs and spices.
+                                            </li>
+                                            <li>
+                                              	Selecting unprocessed foods such as fresh produce, raw nuts, beans and seeds.
+                                                                                            </li>
+                                            <li> Visiting the <a href="http://www.capitalharvestdc.com/">Capital Harvest on the Plaza,</a> <a href="http://freshfarm.org/crystal-city.html">FRESHFARM Crystal City Market</a> or another local farmers’ market to pick up fresh produce.
+
+                                            </li>
+                                            <li> For more information and a list of healthy recipes, visit <a href="https://intranet.epa.gov/ssd/health/nutrition.htm">the EPA Intranet.</a>
+
+                                            </li>
+                                            <li>
+                                                Avoid rigorous activities (e.g., exercising) in the evening.
+                                            </li>
+                                            <li>
+                                              Use a nighttime setting for your smartphone and other electronic devices before bed.
+                                            </li>
+                                            </ul>   </dt>
+                                            </p>
+
+                                        <p>
+                                          For more information, visit the <a href="http://bit.ly/2HZSqnD">EPA intranet</a>.
+                                        </p>
+                                        </div>
+
+                                        <div class="epaex-grid-one">
+                                          <img src="./assets/tomatoes.png" alt="basket of tomatoes" class="epaex-image epaex-image-small"/>
+                                        </div> </main>
+
+                                          <footer>
+                                          <a href="#" class="epaex-back-to-top">Back to Top</a>
+                                        </footer>
+                                        </aside>
+
+
+
+                      <aside class="epaex-content-block" id="sleep">
+                                        <header>
+                                            <h3>Sleep Well</h3>
+                                            <em>Posted April 4</em>
+                                        </header>
+
+                                        <main class="epaex-row">
+                                          <div class="epaex-grid-five">
+                                            <p>
+                                            According to the Centers for Disease Control and Prevention, one-third of Americans report that they usually get less than the recommended amount of sleep. Insufficient sleep is linked to health complications, including chronic diseases such as <a href="https://intranet.epa.gov/ssd/health/diabetes.htm">diabetes</a>, <a href="https://intranet.epa.gov/ssd/health/heart.htm">Heart disease</a>, <a href="https://intranet.epa.gov/ssd/health/weightmanagement.htm">obesity</a>, and <a href="https://intranet.epa.gov/ssd/health/depression.htm">depression</a>.
+                                            <dt class="epaex-term">
+                                            <ul>
+                                            <li>
+                                                	Go to bed earlier to get at least seven hours of sleep.
+                                            </li>
+                                            <li>
+                                              	Ensure that your bedroom is quiet, dark, and comfortable.
+                                            </li>
+                                            <li>
+                                              	Avoid large meals and <a href="https://intranet.epa.gov/ssd/health/alcohol.htm">alcohol</a> prior to going to sleep.
+                                            </li>
+                                            <li>
+                                              	Reduce your caffeine intake, especially later in the day.
+                                            </li>
+                                            <li>
+                                              	Manage your <a href="https://intranet.epa.gov/ssd/health/stress.htm">stress</a> levels.
+                                            </li>
+                                            <li>
+                                              	Avoid rigorous activities (e.g., exercising) in the evening.
+                                            </li>
+                                            <li>
+                                            	Use a nighttime setting for your smartphone and other electronic devices before bed.
+                                            </li>
+                                            </ul>   </dt>
+                                            </p>
+
+                                        <p>
+                                          For more information, visit the <a href="http://bit.ly/2HZSqnD">EPA intranet</a>.
+                                        </p>
+                                        </div>
+
+                                        <div class="epaex-grid-one">
+                                          <img src="./assets/sleep.png" alt="someone sleeping" class="epaex-image epaex-image-small"/>
+                                        </div> </main>
+
+                                          <footer>
+                                          <a href="#" class="epaex-back-to-top">Back to Top</a>
+                                        </footer>
+                                        </aside>
+
+                      <aside class="epaex-content-block" id="diabetes">
+                                        <header>
+                                            <h3>Defend Against Diabetes</h3>
+                                            <em>Posted April 3</em>
+                                        </header>
+
+                                        <main class="epaex-row">
+                                          <div class="epaex-grid-five">
+                                            <p>
+                                            According to the Centers for Disease Control and Prevention, more than 30 million Americans are currently living with diabetes, and one in four cases is undiagnosed. Diabetes is a chronic disease characterized by elevated blood glucose levels, which increases the risk of developing <a href="https://intranet.epa.gov/ssd/health/heart.htm">heart disease</a> or having a <a href="https://intranet.epa.gov/ssd/health/heart.htm#backgroundstroke">stroke</a>.
+
+                                            </p>
+                                        <p>
+
+                                        Visit the American Diabetes Association website to take an <a href="http://www.diabetes.org/are-you-at-risk/diabetes-risk-test/">online diabetes risk assessment for type 2 diabetes</a> (<a href="https://www.epa.gov/home/exit-epa">Exit</a>). If you score "at risk" for type 2 diabetes, follow up with your personal physician to schedule a blood glucose screening, and take steps to eat a <a href="https://intranet.epa.gov/ssd/health/nutrition.htm">balanced diet</a> and <a href="https://intranet.epa.gov/ssd/health/weightmanagement.htm">maintain a healthy weight</a>. You should also visit your personal physician at least once a year to <a href="https://intranet.epa.gov/ssd/health/preventativecare.htm">monitor your health</a>.
+                                        </p>
+                                        <p>
+                                          For more information, visit the <a href="http://bit.ly/2WC7lHQ">EPA intranet</a>.
+                                        </p>
+                                        </div>
+
+                                        <div class="epaex-grid-one">
+                                          <img src="./assets/salad.png" alt="salad" class="epaex-image epaex-image-small"/>
+                                        </div> </main>
+
+                                          <footer>
+                                          <a href="#" class="epaex-back-to-top">Back to Top</a>
+                                        </footer>
+                                        </aside>
+
+                      <aside class="epaex-content-block" id="wq">
+                                        <header>
+                                            <h3>What's New with Wellness?</h3>
+                                            <em>Posted March 28</em>
+                                        </header>
+
+                                        <main class="epaex-row">
+                                          <div class="epaex-grid-five">
+                                            <p>
+                                            Read the latest edition of Wellness Quarterly to catch up on health and wellness resources, tips, and events at EPA. In this issue, read about the following:
+                                            <dt class="epaex-term">
+                                            <ul>
+                                            <li>
+                                              	Put safety first by correcting workplace <a href="https://intranet.epa.gov/hqhs/health/ergonomics/index.htm">ergonomic</a> hazards and <a href="https://intranet.epa.gov/ssd/health/drivesafely.htm">driving safely</a> on winter roads.
+                                            </li>
+                                            <li>
+                                            	Assess your overall health and wellness by taking a <a href="https://intranet.epa.gov/ssd/health/lifestyleprofile.htm">Healthy Lifestyle Profile</a> quiz.
+                                            </li>
+                                            <li>
+                                            	Learn the benefits of a <a href="https://intranet.epa.gov/ssd/health/nutrition.htm">healthy diet</a> and lifestyle changes associated with reducing risk for <a href="https://intranet.epa.gov/ssd/health/antiinflammatory.htm">chronic inflammation</a>.
+                                            </li>
+                                            </ul>   </dt>
+                                            </p>
+                                        <p>
+
+                                        To read the full issue, visit the <a href="http://bit.ly/2Fzh3Ul">Outreach page</a> on the EPA Intranet.
+                                        </p>
+                                        </div>
+
+                                        <div class="epaex-grid-one">
+                                          <img src="./assets/wq.png" alt="tea and vegetables" class="epaex-image epaex-image-small"/>
+                                        </div> </main>
+
+                                          <footer>
+                                          <a href="#" class="epaex-back-to-top">Back to Top</a>
+                                        </footer>
+                                        </aside>
+
+                      <aside class="epaex-content-block" id="nutrition">
+                                        <header>
+                                            <h3>Eat Healthy, Be Healthy</h3>
+                                            <em>Posted March 27</em>
+                                        </header>
+
+                                        <main class="epaex-row">
+                                          <div class="epaex-grid-five">
+                                            <p>
+                                            Healthy food choices and proper nutrition can help prevent <a href="https://intranet.epa.gov/ssd/health/weightmanagement.htm">obesity</a>, <a href="https://intranet.epa.gov/ssd/health/diabetes.htm">type 2 diabetes</a>, <a href="https://intranet.epa.gov/ssd/health/heart.htm">heart disease</a>, <a href="https://intranet.epa.gov/ssd/health/cancer.htm">cancer</a>, and <a href="https://intranet.epa.gov/ssd/health/osteoporosis.htm">osteoporosis</a>. To make healthy food choices:
+                                            <dt class="epaex-term">
+                                                                            <ul>
+                                                                              <li> 		Bring healthy, low-fat foods to meetings.
+                                                                              </li>
+                                                                            <li>
+                                                                                	Explore the healthy food choices at your local snack bar and in vending machines.
+                                                                            </li>
+                                                                            <li>
+                                                                                Visit a local farmers' market for fresh produce to incorporate into your meals.
+                                                                            </li>
+                                                                            <li>
+                                                                                	Join the <a href="https://intranet.epa.gov/hqhs/wellness/walktowellness/index.htm">Walk to Wellness</a> and <a href="https://intranet.epa.gov/hqhs/wellness/challenges/index.htm">Step It Up Challenge</a> to commit to healthy eating, regular physical activity and lifelong good habits.
+                                                                            </li>
+
+                                                                           </ul>   </dt>
+                                            </p>
+                                        <p>
+
+                                        For more information, visit the <a href="https://intranet.epa.gov/ssd/health/nutrition.htm">EPA intranet</a>.
+                                        </p>
+                                        </div>
+
+                                        <div class="epaex-grid-one">
+                                          <img src="./assets/carrots.png" alt="carrots" class="epaex-image epaex-image-small"/>
+                                        </div> </main>
+
+                                          <footer>
+                                          <a href="#" class="epaex-back-to-top">Back to Top</a>
+                                        </footer>
+                                        </aside>
+
+                      <aside class="epaex-content-block" id="resources">
+                                        <header>
+                                            <h3>Discover Online Health and Wellness Resources</h3>
+                                            <em>Posted March 26</em>
+                                        </header>
+
+                                        <main class="epaex-row">
+                                          <div class="epaex-grid-five">
+                                            <p>
+                                            According to the Centers for Disease Control and Prevention, monitoring your health (e.g., regular screenings and <a href="https://intranet.epa.gov/ssd/health/immunization.htm">immunizations</a>), <a href="https://intranet.epa.gov/ssd/health/nutrition.htm">eating a balanced diet</a>, and <a href="https://intranet.epa.gov/ssd/fitness/index.htm">exercising regularly</a> are important to overall health and wellness. To help employees maintain a healthy lifestyle, the EPA intranet provides tips, <a href="https://intranet.epa.gov/ssd/health/index.htm#webinars">webinars</a>, online assessments and other resources on a variety of health and wellness topics such as:
+                                            <dt class="epaex-term">
+                                                                            <ul>
+                                                                              <li> 		<a href="https://intranet.epa.gov/ssd/health/diabetes.htm">Diabetes</a>.
+                                                                              </li>
+                                                                            <li>
+                                                                                <a href="https://intranet.epa.gov/ssd/health/heart.htm">Heart disease</a>.
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://intranet.epa.gov/ssd/health/nutrition.htm">Nutrition</a>.
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://intranet.epa.gov/ssd/health/preventativecare.htm">Preventative care</a>.
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="https://intranet.epa.gov/ssd/health/smokingcessation.htm">Smoking cessation</a>.
+                                                                            </li>
+                                                                            <li>
+                                                                              <a href="https://intranet.epa.gov/ssd/health/stress.htm">Stress management</a>.
+                                                                            </li>
+                                                                            <li>
+                                                                              <a href="https://intranet.epa.gov/ssd/health/weightmanagement.htm">Weight management</a>.
+                                                                            </li>
+
+                                                                           </ul>   </dt>
+                                            </p>
+                                        <p>
+
+                                        For more information, visit the <a href="https://intranet.epa.gov/hqhs/wellness/index.htm">EPA intranet</a>.
+                                        </p>
+                                        </div>
+
+                                        <div class="epaex-grid-one">
+                                          <img src="./assets/laptop.png" alt="laptop" class="epaex-image epaex-image-small"/>
+                                        </div> </main>
+
+                                          <footer>
+                                          <a href="#" class="epaex-back-to-top">Back to Top</a>
+                                        </footer>
+                                        </aside>
+
+
+
+                    </section>
+
+                    <section class="epaex-section" id="security">
+                    <header class="epaex-header-with-icon">
+                      <img src="./assets/image032.gif" alt="lock" class="epaex-header-icon" />
+                      <h2>Security & Preparedness</h2>
+                    </header>
+
+                    <aside class="epaex-content-block epaex-content-block-first" id="badge">
+                          <header>
+                              <h3>There are currently no posts in this section.</h3>
+
+
+                          </header>
+
+                          <footer>
+                              <a href="#" class="epaex-back-to-top">Back to Top</a>
+                          </footer>
+                      </aside>
+
+                  </section>
+                  <div class="epaex-alert">
+                      <p>To provide comments on or entries to EPA Express, please email <a href="mailto:internalcomms@epa.gov">internalcomms@epa.gov</a></p>
+                  </div>
+</section>
+
+                </main>
+                </div>
+
+                  </body>
+                  </html>
